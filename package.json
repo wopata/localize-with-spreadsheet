@@ -12,8 +12,8 @@
     },
     "main": "index.js",
     "dependencies": {
-        "google-spreadsheet": "git://github.com/aardouin/node-google-spreadsheet#1.0"
-        "q":"3.3.9"
+        "google-spreadsheet": "git://github.com/aardouin/node-google-spreadsheet#1.0,
+        "q":"*"
     },
     "devDependencies": {
         "nodeunit": "0.8.1"
