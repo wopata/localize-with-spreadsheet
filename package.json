@@ -12,7 +12,7 @@
     },
     "main": "index.js",
     "dependencies": {
-        "google-spreadsheet": "https://github.com/aardouin/node-google-spreadsheet/archive/1.0.tar.gz"
+        "google-spreadsheet": "git://github.com/aardouin/node-google-spreadsheet#1.0"
     },
     "devDependencies": {
         "nodeunit": "0.8.1"
