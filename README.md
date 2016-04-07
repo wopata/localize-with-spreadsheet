@@ -2,7 +2,26 @@
 
 
 ## Installation
-	npm install localize-with-spreadsheet
+
+Init  `package.json`  if not already created.
+```shell 
+npm init
+```
+
+Add the dependency to `package.json`
+
+```json
+"dependencies": {
+	"localize-with-spreadsheet": "git://github.com/aardouin/localize-with-spreadsheet#1.0.8"
+},
+"repository": {
+	"type": "git",
+	"url": "git+https://github.com/wopata/addmedica-android.git"
+}
+```
+
+Run `npm install`
+
 
 ## Example
 Given a Google Spreadsheet like this:  
