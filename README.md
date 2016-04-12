@@ -12,7 +12,7 @@ Add the dependency to `package.json`
 
 ```json
 "dependencies": {
-	"localize-with-spreadsheet": "git://github.com/aardouin/localize-with-spreadsheet#1.0.8"
+	"localize-with-spreadsheet": "git://github.com/aardouin/localize-with-spreadsheet#1.1"
 },
 "repository": {
 	"type": "git",
