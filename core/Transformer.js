@@ -15,6 +15,7 @@ var iOSTransformer = {
         normalizedValue = normalizedValue.replace(/"/gi, '\\"');
         normalizedValue = normalizedValue.replace(/%([@df])/gi, '%$1');
         normalizedValue = normalizedValue.replace(/%s/gi, "%@");
+        normalizedValue = normalizedValue.replace(/%(\d)\$s/gi, "%$1\$@");
 
         return '"' + key + '" = "' + normalizedValue + '";';
     },
@@ -47,6 +48,7 @@ var androidTransformer = {
         normalizedValue = normalizedValue.replace(/&/gi, "&amp;");
         normalizedValue = normalizedValue.replace(/\u00A0/gi, "\\u00A0");
         normalizedValue = normalizedValue.replace(/([^\.]|^)(\.{3})([^\.]|$)/gi, '$1&#8230;$3');
+        normalizedValue = normalizedValue.replace(/%(\d)\$@/gi, "%$1\$s");
 
         var ouput = '<string name="' + key + '">' + normalizedValue + '</string>';
 
