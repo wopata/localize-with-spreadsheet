@@ -13,10 +13,6 @@ Add the dependency to `package.json`
 ```json
 "dependencies": {
 	"localize-with-spreadsheet": "git://github.com/aardouin/localize-with-spreadsheet#1.1"
-},
-"repository": {
-	"type": "git",
-	"url": "git+https://github.com/wopata/addmedica-android.git"
 }
 ```
 
