@@ -49,6 +49,9 @@ var androidTransformer = {
         normalizedValue = normalizedValue.replace(/&/gi, "&amp;");
         normalizedValue = normalizedValue.replace(/\u00A0/gi, "\\u00A0");
         normalizedValue = normalizedValue.replace(/([^\.]|^)(\.{3})([^\.]|$)/gi, '$1&#8230;$3');
+        normalizedValue = normalizedValue.replace(/</gi, "&lt;");
+        normalizedValue = normalizedValue.replace(/>/gi, "&gt;");
+
         //support ordered parameters %1$s
         normalizedValue = normalizedValue.replace(/%(\d)\$@/gi, "%$1\$s");
 
