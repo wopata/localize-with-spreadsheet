@@ -43,7 +43,7 @@ var androidTransformer = {
     },
     transformKeyValue: function (key, value) {
         var normalizedValue = value.replace(/%newline%/gi, "\\n");
-        normalizedValue = normalizedValue.replace(/'/gi, "\\'");
+        //normalizedValue = normalizedValue.replace(/'/gi, "\\'");
         normalizedValue = normalizedValue.replace(/%([sdf])/gi, '%#$$$1');
         normalizedValue = normalizedValue.replace(/%@/gi, '%s');
         normalizedValue = normalizedValue.replace(/&/gi, "&amp;");
@@ -55,7 +55,7 @@ var androidTransformer = {
         //support ordered parameters %1$s
         normalizedValue = normalizedValue.replace(/%(\d)\$@/gi, "%$1\$s");
 
-        var ouput = '<string name="' + key + '">' + normalizedValue + '</string>';
+        var ouput = '<string name="' + key + '">"' + normalizedValue + '"</string>';
 
         var currPos = 0, nbOcc = 1, newStr = "";
         while ((currPos = ouput.indexOf("%#$", currPos)) != -1) {
