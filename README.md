@@ -12,7 +12,7 @@ Add the dependency to `package.json`
 
 ```json
 "dependencies": {
-	"localize-with-spreadsheet": "git://github.com/aardouin/localize-with-spreadsheet#1.2"
+	"localize-with-spreadsheet": "git://github.com/wopata/localize-with-spreadsheet#1.5"
 }
 ```
 
